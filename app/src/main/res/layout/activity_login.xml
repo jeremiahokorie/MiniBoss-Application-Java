@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/minibosslogo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="with Social works"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnfaceBook"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:text="Facebook"
+        android:background="@drawable/transbutton"
+        android:layout_weight="1"
+        android:textColor="#817F7F"
+        android:layout_margin="15dp"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:text="Google+"
+        android:layout_weight="1"
+        android:textColor="#817F7F"
+        android:background="@drawable/transbutton"
+        android:layout_margin="15dp"
+        android:textSize="10dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="with Social works"
+            android:gravity="center"
+            android:layout_marginTop="15dp"/>
+
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Your Email"
+            android:layout_gravity="center"
+            android:background="@drawable/transbutton"
+            android:textColor="#817F7F"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:textSize="10dp"/>
+
+        <EditText
+            android:id="@+id/Passsword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/transbutton"
+            android:layout_margin="15dp"
+            android:textSize="10dp"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:onClick="Login"
+            android:background="@drawable/buttoncurve"
+            android:layout_margin="15dp"
+            android:textSize="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dont have an Account?"/>
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="tvSignUp"
+                android:textStyle="bold"
+                android:text="SignUp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
